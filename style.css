@@ -58,8 +58,19 @@ body {
 
 /* About */
 .about { display:flex; flex-wrap:wrap; align-items:center; gap:2rem; padding:4rem 1.25rem; max-width:1000px; margin:auto; text-align:center; }
-.about-img img { width:250px; height:250px; border-radius:50%; object-fit:cover; object-position:50% 20%; box-shadow:0 8px 25px rgba(0,0,0,0.3); animation: roll 16s linear infinite; }
-@keyframes roll { from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+.about-img img { 
+  width:250px; 
+  height:250px; 
+  border-radius:50%; 
+  object-fit:cover; 
+  object-position:50% 20%; 
+  box-shadow:0 8px 25px rgba(0,0,0,0.3); 
+  animation: zoomInOut 18s ease-in-out infinite; 
+}
+@keyframes zoomInOut {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
 .about-text { flex:1; min-width:300px; text-align:left; }
 .about-text h2 { font-size:2rem; color:var(--deep); margin-bottom:1rem; }
 .about-text p { font-size:1.1rem; color:#444; line-height:1.6; margin-bottom:.8rem; }
