@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen Olusoji Ayankoso - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="logo">Stephen</div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <h1 class="slide-in">Hi, I'm <span>Stephen</span></h1>
+      <p class="slide-in delay">
+        Passionate about water sustainability, environmental technology, and software innovation. 
+        I’m exploring how IoT, remote sensing, and machine learning can improve water management and irrigation systems.
+      </p>
+      <a href="#about" class="btn slide-in delay-2">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/stephen.jpg" alt="Stephen's profile picture">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate learner combining my interests in 
+        <strong>water quality management, wastewater treatment & reuse</strong> 
+        with cutting-edge technologies.  
+        Currently, I’m advancing my skills in <strong>software engineering</strong> through the Power Learn Project (PLP), 
+        focusing on frontend & backend development, mobile apps, and AI.  
+      </p>
+      <p>
+        My vision is to integrate <strong>IoT, remote sensing, and machine learning</strong> into sustainable irrigation 
+        and smart water management systems that improve efficiency and resilience.  
+        I also enjoy <strong>graphic design</strong>, which allows me to express creativity and design intuitive interfaces.
+      </p>
+      <p>
+        I align my passion with the United Nations’ <span class="sdg-badge">SDG 6: Clean Water & Sanitation</span>,  
+        contributing to innovations that make clean and safe water accessible for all.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Vision Section ===== -->
+  <section class="vision" id="vision">
+    <h2>My Vision</h2>
+    <p>
+      My vision is to develop affordable, scalable, and sustainable water technologies 
+      that will transform the health and livelihoods of rural populations in Nigeria and beyond.
+    </p>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-bars">
+      <div class="skill">
+        <div class="skill-title"><i class="fa-solid fa-code"></i> Frontend Development</div>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-title"><i class="fa-solid fa-server"></i> Backend Development</div>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-title"><i class="fa-solid fa-robot"></i> Machine Learning & AI</div>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-title"><i class="fa-solid fa-wifi"></i> IoT & Remote Sensing</div>
+        <div class="bar"><div class="fill" style="width:70%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-title"><i class="fa-solid fa-paint-brush"></i> Graphic Design</div>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Smart Irrigation System</h3>
+        <p>Using IoT and sensors to optimize water use for small farms.</p>
+      </div>
+      <div class="card">
+        <h3>Wastewater Reuse Model</h3>
+        <p>Simulation and design for sustainable treatment and reuse.</p>
+      </div>
+      <div class="card">
+        <h3>Water Quality Dashboard</h3>
+        <p>AI-driven monitoring of water quality in rural communities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
